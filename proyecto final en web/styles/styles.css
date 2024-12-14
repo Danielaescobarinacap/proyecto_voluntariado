@@ -1,0 +1,290 @@
+
+        /*PAGINA PRINCIPAL*/
+        /* Estilos para la barra de navegación */
+        body {
+            background-image: url('../assets/landing_bg2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: scroll;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .centered-nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        /*Estilos para descripción de la página */
+        .desc {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            width: 50%;
+        }
+
+        .desc2 {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            align-items: center;
+            /*margin: 20px;*/
+            margin-right: 20px;
+            margin-left: 20px;
+            text-align: center;
+            width: 32rem;
+        }
+
+        /* Estilos para los formularios emergentes */
+        .form-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            max-height: 90vh;
+            overflow-y: auto; 
+        }
+        .form-container input[type="text"], .form-container input[type="password"], .form-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%; 
+            box-sizing: border-box; 
+            padding: 10px; 
+            margin-top: 10px; 
+            resize: vertical; 
+            height: 150px; 
+            overflow: auto;
+        }
+        
+        .form-container button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #555;
+        }
+        /* Estilos para cerrar el formulario */
+        .close-btn {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            float: right;
+            border: none;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            background-color: darkred;
+        }
+
+        /* PAGINA 2*/
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            display: flex; /* Utiliza flexbox para alinear los elementos */
+            justify-content: space-between; /* Espacio entre los elementos */
+            align-items: center; /* Centra verticalmente los elementos */
+            padding: 10px; /* Espaciado interno */
+        }
+        
+        .menu {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: none; /* Ocultar el menú por defecto */
+            position: absolute; /* Posicionamiento absoluto para el menú */
+            z-index: 1; /* Asegura que el menú esté por encima de otros elementos */
+        }
+        
+        .menu h2 {
+            color: #fff;
+        }
+        
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .menu a:hover {
+            background-color: #575757;
+        }
+        
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        
+        .toggle-menu {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        
+        .logout-button {
+            background-color: #c0392b; /* Color del botón de cerrar sesión */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .inicio-button {
+            background-color: #3498db; /* Color del botón de cerrar sesión */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .editar-button {
+            background-color: #000; /* Color del botón de cerrar sesión */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .editar2-button {
+            background-color: #3498db; /* Azul */
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .editar2-button:hover {
+            background-color: #2980b9; /* Azul más oscuro */
+        }
+        
+        /* Botón de Eliminar */
+        .eliminar-button {
+            background-color: #e74c3c; /* Rojo */
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .eliminar-button:hover {
+            background-color: #c0392b; /* Rojo más oscuro */
+        }
+        /*voluntario*/
+        /* styles.css */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .category {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .volunteer-list {
+            display: none; /* Ocultar la lista por defecto */
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+
+        .volunteer {
+            background-color: #e0e0e0;
+            padding: 5px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .volunteer-info {
+            display: none; /* Ocultar la información del voluntario por defecto */
+            background-color: #d9edf7;
+            border: 1px solid #bce8f1;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 30rem;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        input[readonly] {
+            background-color: #e9e9e9;
+            cursor: not-allowed;
+        }
+
+        /* Estilo general de la tabla */
+/* Estilo de la tabla */
+        
+
+
+ 
